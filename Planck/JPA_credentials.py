@@ -1,0 +1,6 @@
+API_KEY = '1cfec235-b49c-4d3b-b7ec-f80ea46840a2'
+IP_ADDRESS = '130.237.35.90'
+PORT_NUMBER = 49099
+MXC_ID = 0
+HEATER_ID = 0
+PID_CALIB_FILE = 'examples/pid_calib.csv'

@@ -1,6 +1,6 @@
 {
-"vamp":0.03,
-"vpump":0.0,
+"vamp":0.1,
+"vpump":0.1,
 "dcbias":4.0,
 "f_start":4.395e9,
 "f_stop":4.410e9,

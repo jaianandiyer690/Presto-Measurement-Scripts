@@ -1,0 +1,557 @@
+2026-02-02 13:53:40,054 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 1
+2026-02-02 13:54:38,674 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 1
+2026-02-02 13:54:38,674 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 1
+2026-02-02 13:54:45,524 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:54:45,524 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:54:45,524 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:55:27,551 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:55:27,551 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:55:27,551 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:55:27,551 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:04,470 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:04,470 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:04,470 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:04,470 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:04,470 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:07,740 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:07,740 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:07,740 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:07,740 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:07,740 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:07,740 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 2
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:38,554 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 3
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:43,951 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 4
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:56:51,094 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 5
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:57:04,902 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 6
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 13:58:16,482 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:23,822 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,852 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd071a0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,880 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,899 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:26,910 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,926 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,956 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:29,975 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:32,995 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbfb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,021 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:33,030 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,044 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/power/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfbce0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,060 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:36,069 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,080 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_mode/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9c10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,100 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:39,107 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,121 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/setpoint/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd01eb0>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,134 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:42,141 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,153 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_p/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9610>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,168 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:45,182 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,197 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_i/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdf9f10>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,217 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:48,237 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,250 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/pid_d/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04680>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,288 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:08:51,317 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:50,313 INFO   - get_channel_data() L535  - Requesting value: temperature  from channel 7
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,332 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/temperature/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cdfa030>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,345 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,354 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:53,363 INFO   - get_channel_data() L535  - Requesting value: resistance  from channel 7
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,381 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/mapper/heater_mappings_bftc/device/c7/resistance/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cd00830>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,391 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:56,399 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,413 ERROR  - _get_value_request() L385  - Error: HTTPSConnectionPool(host='130.237.35.90', port=49099): Max retries exceeded with url: /values/driver/bftc/data/heaters/heater_4/active/?prettyprint=1&key=1cfec235-b49c-4d3b-b7ec-f80ea46840a2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x722f5cc04140>, 'Connection to 130.237.35.90 timed out. (connect timeout=3.0)'))
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,423 WARNING - _get_synchronization_status() L342  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
+2026-02-02 14:09:59,431 WARNING - _get_value_from_data_response() L311  - Could not verify synchronization status
