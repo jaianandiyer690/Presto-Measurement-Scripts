@@ -3,3 +3,10 @@ I:/LKiPA-Data
 Planck/JPA_credentials.py
 Planck/bluefors.log
 Presto-Measurement-Scripts/Planck/bluefors.log
+
+JPA Measurements/I:
+JPA Measurements/__pycache__
+
+
+LKIPA Measurements/I:
+LKIPA Measurements/Time series data
