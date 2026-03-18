@@ -1,12 +1,17 @@
 I:/JPA-Data
 I:/LKiPA-Data
-Planck/JPA_credentials.py
-Planck/bluefors.log
-Presto-Measurement-Scripts/Planck/bluefors.log
+
 
 JPA Measurements/I:
 JPA Measurements/__pycache__
-
+JPA Measurements/Signal Data
+JPA Measurements/time_mode.txt
 
 LKIPA Measurements/I:
 LKIPA Measurements/Time series data
+LKIPA Measurements/pump_settings_dc04-06_rf015-03.csv
+
+Planck/PlanckSpec_Codes
+Planck/Bluefors_Control_Software_User_Manual.pdf
+Planck/JPA_credentials.py
+Planck/bluefors.log
