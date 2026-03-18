@@ -15,4 +15,10 @@ Planck/PlanckSpec_Codes
 Planck/Bluefors_Control_Software_User_Manual.pdf
 Planck/JPA_credentials.py
 Planck/bluefors.log
+<<<<<<< HEAD
 Planck/__pycache__/JPA_credentials.cpython-312.pyc
+=======
+Planck/Bluefors-Temperature-Controller-API-Technical-Reference-version-3.0.pdf
+Planck/Bluefors-Temperature-Controller-Software-Upgrade-Instructions.pdf
+Planck/Bluefors-Temperature-Controller-User-Manual-version-5.0.pdf
+>>>>>>> b0d41f9f18ba6064af3bd990e114fb5c4f5d6bb0
