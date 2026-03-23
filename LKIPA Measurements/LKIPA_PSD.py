@@ -42,7 +42,7 @@ CONVERTER_CONFIGURATION = {
 }     
 
 # Number of pixels to be captured
-N_PIX = 5_000  
+N_PIX = 1_000 
 
 # Define data acquisition function
 def data_acquisition(
@@ -62,7 +62,7 @@ def data_acquisition(
     df: float,
     dcb_port: int,
     dcb_amp: float,
-    n_pix: int
+    n_pix: int,
 ):
     with test.Test(address=address, port=port, **converter_configuration) as tst:
         # Get extra samples at the beginning and throw them away
@@ -90,6 +90,8 @@ def data_acquisition(
 
         # Print hardware configuration statement
         print('Hardware configuration successful, initiating data acquisition ...')
+
+        myrun = time.strftime("%Y-%m-%d_%H_%M_%S")  
 
         # Start data acquisition
         data_all = []
@@ -134,7 +136,7 @@ def data_acquisition(
     # Print measurement metadata
     # ==========================
 
-    print('MEASUREMENT PARAMETERS:')
+    print('\nMEASUREMENT PARAMETERS:')
     print('=======================')
 
     # Analog-to-Digital Converter Mode
@@ -162,7 +164,7 @@ def data_acquisition(
     # Number of samples per pixel 
     print(f"Number of samples per pixel: {nr_samples}")
     
-    return data_all, dt, fs, nr_samples
+    return data_all, dt, fs, nr_samples, myrun
 
 def remove_DC(
         data_all,
@@ -274,6 +276,7 @@ def lorentz_fit(
         p0=[0.5, 0.5, 0.5, 0.428, 0.5e-3]
     )[0]
 
+    print('\n=======================')
     print('FITTING PARAMETERS:')
     print('A_background = ', str(np.round(A_bg, 2)))
     print('B_background = ', str(np.round(B_bg, 2)))
@@ -281,12 +284,28 @@ def lorentz_fit(
     print('f0 = ', str(np.round(f_0 + 4, 5)), 'GHz')
     print('gamma = ', str(np.round(np.abs(gamma * 1e3), 3)), 'MHz')
 
-    return lorentzian_fit_func(f_arr_bandwidth, A_bg, B_bg, A_peak, f_0, gamma)
+    return A_bg, B_bg, A_peak, f_0, gamma
 
 def plot_PSD_bw(
         PSD_bandwidth,
         f_arr_bandwidth,
 ):
+    
+    # get fitting function
+    fit_params = lorentz_fit(
+                PSD_bandwidth=PSD_bandwidth,
+                f_arr_bandwidth=f_arr_bandwidth,
+                lorentzian_fit_func=lorentzian_fit_func
+            )
+    
+    fit_func = lorentzian_fit_func(
+        f_arr_bandwidth, 
+        A_bg=fit_params[0],
+        B_bg=fit_params[1],
+        A_peak=fit_params[2],
+        f_0=fit_params[3],
+        gamma=fit_params[4]
+    )
     
     # PLOT
     # ====
@@ -300,14 +319,10 @@ def plot_PSD_bw(
     ax.plot(f_arr_bandwidth, PSD_bandwidth, label="$\\langle \\tilde V^2[\\omega] \\rangle$", color = "b", lw=1.3)
     ax.plot(
         f_arr_bandwidth, 
-        lorentz_fit(
-            PSD_bandwidth=PSD_bandwidth,
-            f_arr_bandwidth=f_arr_bandwidth,
-            lorentzian_fit_func=lorentzian_fit_func
-            ),
-            label='Fit',
-            lw=2,
-            color='darkorange'
+        fit_func,
+        label='Fit',
+        lw=2,
+        color='darkorange'
         )
     ax.set_xlabel("Frequency [GHz]")
     ax.set_ylabel("Magnitude [a.u.]")
@@ -317,7 +332,19 @@ def plot_PSD_bw(
     plt.show()
 
 # Save data function
-def save_data(folder, file, sample, myrun, freq_comb, df, dt, n_pix, n_samples, data_all):
+def save_data(
+        folder, 
+        file, 
+        sample, 
+        myrun, 
+        df, 
+        dt, 
+        n_pix, 
+        n_samples, 
+        data_all, 
+        temp,
+        fit_params,
+        ):
     if not os.path.isdir(folder):
         os.makedirs(folder)
 
@@ -325,40 +352,169 @@ def save_data(folder, file, sample, myrun, freq_comb, df, dt, n_pix, n_samples, 
     with h5py.File(os.path.join(folder, file), "a") as savefile:
         # String as handles
         sample_str = '{}/sample'.format(myrun)
-        freq_comb_str = "{}/Frequency Comb".format(myrun)
         df_data_str = "{}/df".format(myrun)
         time_series_str = "{}/Time Series Data".format(myrun)
-
         dt_str = '{}/dt'.format(myrun)
         npix_data_str = "{}/Pixels".format(myrun)
         nsamples_series_str = "{}/Samples per pixel".format(myrun)
-
+        temp_str = "{}/Temperature".format(myrun)
+        fit_params_str = "{}/Fit parameters".format(myrun)
+        
         # Write data to datasets
-        savefile.create_dataset(sample_str, (np.shape(sample)),
-                                dtype=str, data=sample)
-        savefile.create_dataset(freq_comb_str, (np.shape(freq_comb)),
-                                dtype=float, data=freq_comb)
+        dt_string = h5py.string_dtype(encoding="utf-8")
+        savefile.create_dataset(sample_str, data=str(sample), dtype=dt_string)
+        
         savefile.create_dataset(df_data_str, (np.shape(df)),
                                 dtype=float, data=df)
-        savefile.create_dataset(time_series_str, (np.shape(data_all)),
-                                dtype=complex, data=data_all)
+        
+        data_all_arr = np.asarray(data_all)
+        savefile.create_dataset(time_series_str, data=data_all_arr)
+        
         savefile.create_dataset(dt_str, (np.shape(dt)),
                                 dtype=float, data=dt)
+        
         savefile.create_dataset(npix_data_str, (np.shape(n_pix)),
                                 dtype=float, data=n_pix)
+        
         savefile.create_dataset(nsamples_series_str , (np.shape(n_samples)),
                                 dtype=complex, data=n_samples)
-
+        
+        savefile.create_dataset(temp_str, (np.shape(temp)),
+                                dtype=complex, data=temp)
+        
+        savefile.create_dataset(fit_params_str, (np.shape(fit_params)),
+                                dtype=complex, data=fit_params)
+        
         # Write dataset attributes
-        savefile[freq_comb_str].attrs["Unit"] = "Hz"
         savefile[df_data_str].attrs["Unit"] = "Hz"
+        savefile[dt_str].attrs["Unit"] = "ns"
         savefile[time_series_str].attrs["Unit"] = "fsu complex"
+        savefile[temp_str].attrs["Unit"] = "mK"
 
 
-# Filename based on timestamp of experimental run
-Ym_str = time.strftime("%Y-%m")                                 # Get year and month
-meas_type   = 'PSD'                                             # Measurement type
-save_folder = r'I:/LKiPA-Data/{}/{}'.format(Ym_str, meas_type)  # Create folder for current month and measurement type
-myrun       = time.strftime("%Y-%m-%d_%H_%M_%S")                # Save experimental run for each timestamp
-save_file   = r"{}.hdf5".format(myrun)                          # Save data in hdf5 file for current run
-sample      = 'LKIPA'
+def get_lkipa_resonance(
+    address: str,
+    port: int,
+    converter_configuration: dict,
+    input_port: int,
+    adc_att: float,
+    input_nco: float,
+    output_port: int,
+    dac_curr: int,
+    amp: float,
+    freq: float,
+    phasei: float,
+    phaseq: float,
+    output_nco: float,
+    df: float,
+    dcb_port: int,
+    dcb_amp: float,
+    n_pix: int,
+    f_L: float,
+    f_R: float,
+    save_folder,
+    save_file,
+    temp,
+):
+    # Run data acquisition
+    data_all, dt, fs, n_samples, myrun = data_acquisition(
+        address=address,
+        port=port,
+        converter_configuration=converter_configuration,
+        input_port=input_port,
+        adc_att=adc_att,
+        input_nco=input_nco,
+        output_port=output_port,
+        dac_curr=dac_curr,
+        amp=amp,
+        freq=freq,
+        phasei=phasei,
+        phaseq=phaseq,
+        output_nco=output_nco,
+        df=df,
+        dcb_port=dcb_port,
+        dcb_amp=dcb_amp,
+        n_pix=n_pix,
+    )
+
+    # Get untwisted dc removed time series
+    I_all = remove_DC(data_all=data_all)
+
+    # GET POWER SPECTRAL DENSITY
+    PSD_avg, f_arr, t_arr = get_PSD_avg(
+        I_all=I_all,
+        n_samples=n_samples,
+        dt=dt
+    )
+
+    # SELECT BANDWIDTH
+    PSD_bw, f_bw = get_PSD_bw(
+        PSD_avg=PSD_avg,
+        f_arr=f_arr,
+        f_L=f_L,
+        f_R=f_R,
+    )
+
+    # Get fitting parameters for PSD
+    fit_params = lorentz_fit(
+        PSD_bandwidth=PSD_bw,
+        f_arr_bandwidth=f_bw,
+        lorentzian_fit_func=lorentzian_fit_func,
+    )
+
+    # Save data, generate plot
+
+    save_data(
+        folder=save_folder,
+        file=save_file,
+        sample='LKIPA',
+        myrun=myrun,
+        df=df,
+        dt=dt,
+        n_pix=n_pix,
+        n_samples=n_samples,
+        data_all=data_all,
+        temp=temp,
+        fit_params=fit_params,
+    )
+
+############################ TESTING #############################################
+
+# save_folder='/home/nanophys-meas/Desktop/Jai Master Thesis/Presto-Measurement-Scripts/LKIPA Measurements/I:/LKiPA-Data/2026-03/Planck Tests'
+# myrun       = time.strftime("%Y-%m-%d_%H_%M_%S")                # Save experimental run for each timestamp
+# save_file   = r"{}.hdf5".format(myrun)                          # Save data in hdf5 file for current run
+
+# get_lkipa_resonance(
+#     address=ADDRESS,
+#         port=PORT,
+#         converter_configuration=CONVERTER_CONFIGURATION,
+#         input_port=INPUT_PORT,
+#         adc_att=ADC_ATT,
+#         input_nco=INPUT_NCO,
+#         output_port=FLUX_PORT,
+#         dac_curr=DAC_CURR,
+#         amp=PUMP_AMP,
+#         freq=PUMP_FREQ,
+#         phasei=PHASEI,
+#         phaseq=PHASEQ,
+#         output_nco=PUMP_NCO,
+#         df=DF,
+#         dcb_port=DC_PORT,
+#         dcb_amp=DC_BIAS,
+#         n_pix=N_PIX,
+#         f_L=0.42,
+#         f_R=0.44,
+#         save_folder=save_folder,
+#         save_file=save_file,
+#         temp = 10
+# )
+
+
+
+
+
+
+
+
+
+

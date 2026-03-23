@@ -45,7 +45,7 @@ def save_script(folder, file, sample, myrun, myrun_attrs):
 
 
 # Save data function
-def save_data(folder, file, sample, myrun, freq, usb_arr, lsb_arr):
+def save_data(folder, file, sample, myrun, freq, usb_arr, lsb_arr, temp):
     if not os.path.isdir(folder):
         os.makedirs(folder)
 
@@ -55,6 +55,7 @@ def save_data(folder, file, sample, myrun, freq, usb_arr, lsb_arr):
         freq_data_str = "{}/{}/freq comb".format(sample, myrun)
         usb_data_str = "{}/{}/USB".format(sample, myrun)
         lsb_data_str = "{}/{}/LSB".format(sample, myrun)
+        temp_str = "{}/{}/temperature".format(sample, myrun)
 
         # Write data to datasets
         savefile.create_dataset(freq_data_str, (np.shape(freq)),
@@ -63,30 +64,24 @@ def save_data(folder, file, sample, myrun, freq, usb_arr, lsb_arr):
                                 dtype=complex, data=usb_arr)
         savefile.create_dataset(lsb_data_str, (np.shape(lsb_arr)),
                                 dtype=complex, data=lsb_arr)
+        savefile.create_dataset(temp_str, (np.shape(temp)),
+                                dtype=complex, data=temp)
 
         # Write dataset attributes
         savefile[freq_data_str].attrs["Unit"] = "Hz"
         savefile[usb_data_str].attrs["Unit"] = "fsu complex"
         savefile[lsb_data_str].attrs["Unit"] = "fsu complex"
+        savefile[temp_str].attrs["Unit"] = "mK"
 
-
-# Saving folder location, saving file and run name
-save_folder = r'/media/JPA/JPA-Data/2024-06/planck_spectroscopy'
-save_file = r'2024-06-planck_702mk.hdf5'
-myrun = time.strftime("%Y-%m-%d_%H_%M_%S")
-t_start = time.strftime("%Y-%m-%d_%H_%M_%S")
 
 # Sample name and total attenuation along measurement chain
 sample = 'JPA'
-meas_type = 'planck spectroscopy'
-atten = 80
-temperature = 0.702
+meas_type = 'Planck Spectroscopy'
+
 
 # Lab Network
 ADDRESS = '130.237.35.90'   # from Office
 PORT = 42873                # Presto DELTA
-
-Box = 'Presto DELTA'
 
 # Physical Ports
 input_port = 1
@@ -112,86 +107,73 @@ fs_span = 200e6
 # Listening comb
 _fs_comb = np.linspace(0, fs_span, nr_sig_freqs)
 
-# Instantiate lockin device
-with lockin.Lockin(address=ADDRESS,
-                   port=PORT,
-                   adc_mode=AdcMode.Mixed,
-                   adc_fsample=AdcFSample.G2,
-                   dac_mode=DacMode.Mixed02,
-                   dac_fsample=DacFSample.G6,
-                   ) as lck:
+def get_jpa_planck(
+        save_folder,
+        save_file, 
+        current_temp
+):
+    # Saving folder location, saving file and run name
+    myrun = time.strftime("%Y-%m-%d_%H_%M_%S")
 
-    # Start timer
-    t_start = time.strftime("%Y-%m-%d_%H_%M_%S")
+    # Instantiate lockin device
+    with lockin.Lockin(address=ADDRESS,
+                    port=PORT,
+                    adc_mode=AdcMode.Mixed,
+                    adc_fsample=AdcFSample.G2,
+                    dac_mode=DacMode.Mixed02,
+                    dac_fsample=DacFSample.G6,
+                    ) as lck:
 
-    # Print Presto version
-    print("Presto version: " + presto.__version__)
+        # Tune the listening comb
+        fs_comb, df = lck.tune(_fs_comb, _df)
 
-    # Tune the listening comb
-    fs_comb, df = lck.tune(_fs_comb, _df)
+        # Set df
+        lck.set_df(df)
 
-    # Set df
-    lck.set_df(df)
+        # Data
+        usb_arr = np.zeros((Npix, nr_sig_freqs), dtype=np.complex128)
+        lsb_arr = np.zeros_like(usb_arr)
 
-    # Data
-    usb_arr = np.zeros((Npix, nr_sig_freqs), dtype=np.complex128)
-    lsb_arr = np.zeros_like(usb_arr)
+        # Configure mixer just to be able to create output and input groups
+        lck.hardware.configure_mixer(freq=fNCO,
+                                    in_ports=input_port,
+                                    )
 
-    # Configure mixer just to be able to create output and input groups
-    lck.hardware.configure_mixer(freq=fNCO,
-                                 in_ports=input_port,
-                                 )
+        # Create input group
+        ig = lck.add_input_group(port=input_port, nr_freq=nr_sig_freqs)
+        ig.set_frequencies(fs_comb)
 
-    # Create input group
-    ig = lck.add_input_group(port=input_port, nr_freq=nr_sig_freqs)
-    ig.set_frequencies(fs_comb)
+        lck.apply_settings()
+        lck.hardware.sleep(1e-4, False)
 
-    lck.apply_settings()
-    lck.hardware.sleep(1e-4, False)
+        with tqdm(total=(Npix // N_chunk), ncols=80) as pbar:
 
-    with tqdm(total=(Npix // N_chunk), ncols=80) as pbar:
+            for n in range(0, Npix, N_chunk):
 
-        for n in range(0, Npix, N_chunk):
+                # Get lock-in packets (pixels) from the local buffer
+                data = lck.get_pixels(Nskip + N_chunk, summed=False, nsum=Navg, quiet=True)
+                freqs, pixels_i, pixels_q = data[input_port]
 
-            # Get lock-in packets (pixels) from the local buffer
-            data = lck.get_pixels(Nskip + N_chunk, summed=False, nsum=Navg, quiet=True)
-            freqs, pixels_i, pixels_q = data[input_port]
+                # Convert a measured IQ pair into a low/high sideband pair
+                LSB, HSB = utils.untwist_downconversion(pixels_i, pixels_q)
 
-            # Convert a measured IQ pair into a low/high sideband pair
-            LSB, HSB = utils.untwist_downconversion(pixels_i, pixels_q)
+                usb_arr[n:n + N_chunk] = HSB[-N_chunk:]
+                lsb_arr[n:n + N_chunk] = LSB[-N_chunk:]
 
-            usb_arr[n:n + N_chunk] = HSB[-N_chunk:]
-            lsb_arr[n:n + N_chunk] = LSB[-N_chunk:]
+                # Update progress bar
+                pbar.update(1)
 
-            # Update progress bar
-            pbar.update(1)
+    # Save data
+    save_data(save_folder, save_file, meas_type, myrun, fs_comb + fNCO, usb_arr, lsb_arr, temp=current_temp)
 
 
-# Stop timer
-t_end = time.strftime("%Y-%m-%d_%H_%M_%S")
 
-# Create dictionary with attributes
-myrun_attrs = {"Meas": meas_type,
-               "Instr": Box,
-               "T": temperature,
-               "Sample": sample,
-               "att": atten,
-               "4K-amp_out": 42,
-               "RT-amp_out": 41,
-               "RT-amp_in": 0,
-               "fNCO": fNCO,
-               "f_start": fs_comb[0] + fNCO,
-               "f_stop": fs_comb[-1] + fNCO,
-               "df": df,
-               "nr_freq": nr_sig_freqs,
-               "Npixels": Npix,
-               "t_start": t_start,
-               "t_end": t_end,
-               "Script name": os.path.basename(__file__),
-               }
+save_folder = '/home/nanophys-meas/Desktop/Jai Master Thesis/Presto-Measurement-Scripts/LKIPA Measurements/I:/LKiPA-Data/2026-03/Planck Tests'
+save_file = '2026-03-JPA-planck_10mk.hdf5'
+current_temp = 10
 
-# Save script and attributes
-save_script(save_folder, save_file, meas_type, myrun, myrun_attrs)
-
-# Save data
-save_data(save_folder, save_file, meas_type, myrun, fs_comb + fNCO, usb_arr, lsb_arr)
+get_jpa_planck(
+    save_folder,
+    save_file,
+    current_temp
+)

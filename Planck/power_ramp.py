@@ -20,8 +20,8 @@ importlib.reload(JPA_credentials)
 from JPA_credentials import API_KEY, IP_ADDRESS, PORT_NUMBER, MXC_ID, HEATER_ID, PID_CALIB_FILE
 
 # Import scripts for JPA AND LKIPA planck spectroscopy
-#import JPA_planck_spec 
-#import LKIPA_planck_spec
+# import JPA_planck_spec as jps
+# import LKIPA_planck_spec as lps
 
 # Timeout for hardware communication
 import requests
@@ -208,13 +208,41 @@ def get_stable_temp_ON(heater_power, N_runs):
 
 def heater_ramp_up(MXC_heater_power_list, N_runs):
     for heater_power in MXC_heater_power_list:
-        current_temp = get_stable_temp_ON(heater_power=heater_power, N_runs=N_runs)
+        current_temp = np.round(
+            a = get_stable_temp_ON(heater_power=heater_power, N_runs=N_runs),
+            decimals = 2
+        )
+        
+
+        # Run JPA Planck
+        # =====================
         print('Running JPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
-        # run jpa script
+        # File location for JPA data for current stable temp
+        save_folder = 0
+        save_file = f'2026-03-JPA-planck_{current_temp}mk.hdf5'
+        # run JPA script
+        #jps.get_jpa_planck(save_folder, save_file, current_temp)
+
+        # print data acquisition for JPA complete for current temp
+        print('JPA Planck data saved for T = ', str(np.round(current_temp, 2)))
+
+        # Start LKIPA Planck
+        # ======================
         print('Running LKIPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
-        # run lkipa script
+
+        # File location for JPA data for current stable temp
+        save_folder = 0
+        save_file = f'2026-03-LKIPA-planck_{current_temp}mk.hdf5'
+        # run LKIPA script
+        # lps.get_lkipa_planck(save_folder, save_file, current_temp)
+
+        # print data acquisition for LKIPA complete for current temp
+        print('LKIPA Planck data saved for T = ', str(np.round(current_temp, 2)))
+
+        # Start LKIPA Resonance
+        # ======================
         print('Running LKIPA Resonance for T = ', str(np.round(current_temp, 2)))
         # run lkipa resonance script
 
         # Data saved for current temperature
-        print('Data saved for T = ', str(np.round(current_temp, 2)))
+        print('LKIPA Resonance data saved for T = ', str(np.round(current_temp, 2)))
