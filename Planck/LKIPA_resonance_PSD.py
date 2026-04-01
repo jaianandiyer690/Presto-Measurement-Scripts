@@ -10,8 +10,8 @@ import os
 import h5py
 
 # Network settings for Presto Hardware
-ADDRESS = '130.237.35.90'       # IP Address
-PORT    = 42873                 # TCP Port
+ADDRESS = '192.168.88.53'       # IP Address
+PORT    = None                 # TCP Port
 
 # Input (ADC) settings
 INPUT_PORT = 5                  # Correlated vacuum input to presto, output frm JPA
@@ -273,7 +273,7 @@ def lorentz_fit(
         lorentzian_fit_func,
         f_arr_bandwidth,
         PSD_bandwidth,
-        p0=[0.5, 0.5, 0.5, 0.428, 0.5e-3]
+        p0=[0.5, 0.5, 0.16, 0.428, 0.5e-3]
     )[0]
 
     print('\n=======================')
@@ -289,15 +289,11 @@ def lorentz_fit(
 def plot_PSD_bw(
         PSD_bandwidth,
         f_arr_bandwidth,
+        fit_params,
+        temp,
 ):
     
     # get fitting function
-    fit_params = lorentz_fit(
-                PSD_bandwidth=PSD_bandwidth,
-                f_arr_bandwidth=f_arr_bandwidth,
-                lorentzian_fit_func=lorentzian_fit_func
-            )
-    
     fit_func = lorentzian_fit_func(
         f_arr_bandwidth, 
         A_bg=fit_params[0],
@@ -306,6 +302,9 @@ def plot_PSD_bw(
         f_0=fit_params[3],
         gamma=fit_params[4]
     )
+
+    # temperature string
+    temp_str = str(temp)
     
     # PLOT
     # ====
@@ -316,9 +315,9 @@ def plot_PSD_bw(
 
     # Plot PSD
     ax.grid(alpha=0.8, linestyle='--')
-    ax.plot(f_arr_bandwidth, PSD_bandwidth, label="$\\langle \\tilde V^2[\\omega] \\rangle$", color = "b", lw=1.3)
+    ax.plot(4 + f_arr_bandwidth, PSD_bandwidth, label="$\\langle \\tilde V^2[\\omega] \\rangle$", color = "b", lw=1.3)
     ax.plot(
-        f_arr_bandwidth, 
+        4 + f_arr_bandwidth, 
         fit_func,
         label='Fit',
         lw=2,
@@ -326,10 +325,16 @@ def plot_PSD_bw(
         )
     ax.set_xlabel("Frequency [GHz]")
     ax.set_ylabel("Magnitude [a.u.]")
-    ax.set_title("Mean Power Spectral Density", fontsize=16)
+    ax.set_title("Power Spectral Density: Temperature = " + temp_str+ 'mK', fontsize=16)
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5), fontsize=12)
 
-    plt.show()
+    # Save plot
+    fig.savefig(
+        fname=f'D:/Planck Spectroscopy 2026-03/LKIPA Resonance/Plots/LKIPA_resonance_PSD-temp={temp_str}.png',
+        dpi=200,
+    )
+
+    plt.close(fig)
 
 # Save data function
 def save_data(
@@ -410,11 +415,11 @@ def get_lkipa_resonance(
     dcb_port: int,
     dcb_amp: float,
     n_pix: int,
-    f_L: float,
-    f_R: float,
     save_folder,
     save_file,
     temp,
+    f_L = 0.42,
+    f_R = 0.44,
 ):
     # Run data acquisition
     data_all, dt, fs, n_samples, myrun = data_acquisition(
@@ -462,7 +467,17 @@ def get_lkipa_resonance(
         lorentzian_fit_func=lorentzian_fit_func,
     )
 
-    # Save data, generate plot
+    # Save plot
+    plot_PSD_bw(
+        PSD_bandwidth=PSD_bw,
+        f_arr_bandwidth=f_bw,
+        fit_params=fit_params,
+        temp=temp,
+)
+    print('\n=======================')
+    print('Plot Saved')
+
+    # Save data
     save_data(
         folder=save_folder,
         file=save_file,
@@ -476,10 +491,12 @@ def get_lkipa_resonance(
         temp=temp,
         fit_params=fit_params,
     )
+    print('\n=======================')
+    print('Data Saved')
 
 ############################ TESTING #############################################
 
-# save_folder='/home/nanophys-meas/Desktop/Jai Master Thesis/Presto-Measurement-Scripts/LKIPA Measurements/I:/LKiPA-Data/2026-03/Planck Tests'
+# save_folder='D:/Planck Spectroscopy 2026-03/LKIPA Resonance'
 # myrun       = time.strftime("%Y-%m-%d_%H_%M_%S")                # Save experimental run for each timestamp
 # save_file   = r"{}.hdf5".format(myrun)                          # Save data in hdf5 file for current run
 
