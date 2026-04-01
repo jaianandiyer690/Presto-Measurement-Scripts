@@ -170,25 +170,26 @@ def remove_DC(
         data_all,
         converter_configuration=CONVERTER_CONFIGURATION,
         n_pix=N_PIX,
+        verbose=False,
 ):
     if converter_configuration["adc_mode"] == AdcMode.Mixed:
-        print("Data format: Mixed mode (I and Q interleaved)")
+        if verbose: print("Data format: Mixed mode (I and Q interleaved)")
 
         # Convert raw ADC data to full-scale (FS) units and separate I and Q components
         I_all = data_all[:, 0::2]
         Q_all = data_all[:, 1::2]   # left alone for now !!!
-        print(f"Shape of I data: {I_all.shape}")
+        if verbose: print(f"Shape of I data: {I_all.shape}")
 
         # Assign data array for raw pixel I data
         for pix in range(n_pix):
             I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
     
     elif converter_configuration["adc_mode"] == AdcMode.Direct:
-        print("Data format: Direct mode (I only)")
+        if verbose: print("Data format: Direct mode (I only)")
 
         # Convert raw ADC data to full-scale (FS) units
         I_all = data_all
-        print(f"Shape of I data: {I_all.shape}")
+        if verbose: print(f"Shape of I data: {I_all.shape}")
 
         for pix in range(N_PIX):
             I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
@@ -268,6 +269,7 @@ def lorentz_fit(
         PSD_bandwidth,
         f_arr_bandwidth,
         lorentzian_fit_func,
+        verbose=False,
 ):
     A_bg, B_bg, A_peak, f_0, gamma = cf(
         lorentzian_fit_func,
@@ -276,13 +278,15 @@ def lorentz_fit(
         p0=[0.5, 0.5, 0.16, 0.428, 0.5e-3]
     )[0]
 
-    print('\n=======================')
-    print('FITTING PARAMETERS:')
-    print('A_background = ', str(np.round(A_bg, 2)))
-    print('B_background = ', str(np.round(B_bg, 2)))
-    print('A_peak = ', str(np.round(A_peak, 2)))
-    print('f0 = ', str(np.round(f_0 + 4, 5)), 'GHz')
-    print('gamma = ', str(np.round(np.abs(gamma * 1e3), 3)), 'MHz')
+    if verbose:
+
+        print('\n=======================')
+        print('FITTING PARAMETERS:')
+        print('A_background = ', str(np.round(A_bg, 2)))
+        print('B_background = ', str(np.round(B_bg, 2)))
+        print('A_peak = ', str(np.round(A_peak, 2)))
+        print('f0 = ', str(np.round(f_0 + 4, 5)), 'GHz')
+        print('gamma = ', str(np.round(np.abs(gamma * 1e3), 3)), 'MHz')
 
     return A_bg, B_bg, A_peak, f_0, gamma
 
