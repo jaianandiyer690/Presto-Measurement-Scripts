@@ -196,7 +196,6 @@ def remove_DC(
 
     return I_all 
 
-
 def get_PSD_avg(
     I_all,
     n_samples,

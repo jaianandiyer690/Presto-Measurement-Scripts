@@ -10,10 +10,10 @@ import os
 import h5py
 
 # Network settings for Presto Hardware
-ADDRESS = '192.168.88.53'       # IP Address
-PORT    = None                 # TCP Port
-# ADDRESS = '130.237.35.90'       # IP Address
-# PORT    = 42873                 # TCP Port
+# ADDRESS = '192.168.88.53'       # IP Address
+# PORT    = None                 # TCP Port
+ADDRESS = '130.237.35.90'       # IP Address
+PORT    = 42873                 # TCP Port
 
 # Input (ADC) settings
 INPUT_PORT = 5                  # Correlated vacuum input to presto, output frm JPA

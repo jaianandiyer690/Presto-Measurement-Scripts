@@ -15,9 +15,10 @@ LKIPA Measurements/pump_settings_dc04-06_rf015-03.csv
 Planck/Bluefors_Control_Software_User_Manual.pdf
 Planck/JPA_credentials.py
 Planck/bluefors.log
-Planck/__pycache__/JPA_credentials.cpython-312.pyc
+Planck/__pycache__
 Planck/Bluefors-Temperature-Controller-API-Technical-Reference-version-3.0.pdf
 Planck/Bluefors-Temperature-Controller-Software-Upgrade-Instructions.pdf
 Planck/Bluefors-Temperature-Controller-User-Manual-version-5.0.pdf
 Planck/BlueFTC-Manuals
 Planck/LKIPA Resonance Fitting
+**/__pycache__/

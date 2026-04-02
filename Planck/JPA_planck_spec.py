@@ -80,8 +80,10 @@ meas_type = 'Planck Spectroscopy'
 
 
 # Lab Network
-ADDRESS = '130.237.35.90'   # from Office
-PORT = 42873                # Presto DELTA
+# ADDRESS = '130.237.35.90'   # from Office
+# PORT = 42873                # Presto DELTA
+ADDRESS = '192.168.88.53'       # IP Address
+PORT    = None                 # TCP Port
 
 # Physical Ports
 input_port = 1
