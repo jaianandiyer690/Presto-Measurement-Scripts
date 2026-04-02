@@ -80,8 +80,10 @@ meas_type = 'Planck Spectroscopy'
 
 
 # Lab Network
-ADDRESS = '130.237.35.90'   # from Office
-PORT = 42873                # Presto DELTA
+# ADDRESS = '130.237.35.90'   # from Office
+# PORT = 42873                # Presto DELTA
+ADDRESS = '192.168.88.53'       # IP Address
+PORT    = None                 # TCP Port
 
 # Physical Ports
 input_port = 5
@@ -90,9 +92,9 @@ input_port = 5
 # NCO frequency
 fNCO = 4.42e9
 # Bandwidth in Hz
-_df = 1e3
+_df = 1e3 # 1e3 for experiment
 # Number of pixels
-Npix = 2_500_000
+Npix =  2_500_000 # for experiment
 N_chunk = 2500  # number of pixels per chunk
 # Number of pixels we discard
 Nskip = 0
@@ -101,7 +103,7 @@ Navg = 1
 
 # SIGNAL PARAMETERS
 # Number of frequencies of the frequency comb
-nr_sig_freqs = 96
+nr_sig_freqs = 96 # 96 for experiment
 # Frequency span
 fs_span = 200e6
 # Listening comb
@@ -167,13 +169,13 @@ def get_lkipa_planck(
     save_data(save_folder, save_file, meas_type, myrun, fs_comb + fNCO, usb_arr, lsb_arr, temp=current_temp)
 
 
+#### TESTING ####
+# save_folder = 'D:/Planck Spectroscopy 2026-03/LKIPA'
+# save_file = '2026-03-LKIPA-planck_10mk-test.hdf5'
+# current_temp = 10
 
-save_folder = '/home/nanophys-meas/Desktop/Jai Master Thesis/Presto-Measurement-Scripts/LKIPA Measurements/I:/LKiPA-Data/2026-03/Planck Tests'
-save_file = '2026-03-LKIPA-planck_10mk.hdf5'
-current_temp = 10
-
-get_lkipa_planck(
-    save_folder,
-    save_file,
-    current_temp
-)
+# get_lkipa_planck(
+#     save_folder,
+#     save_file,
+#     current_temp
+# )

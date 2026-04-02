@@ -42,7 +42,7 @@ CONVERTER_CONFIGURATION = {
 }     
 
 # Number of pixels to be captured
-N_PIX = 1_000 
+N_PIX = 5_000 
 
 # Define data acquisition function
 def data_acquisition(
@@ -333,7 +333,7 @@ def plot_PSD_bw(
 
     # Save plot
     fig.savefig(
-        fname=f'D:/Planck Spectroscopy 2026-03/LKIPA Resonance/Plots/LKIPA_resonance_PSD-temp={temp_str}.png',
+        fname=f'D:/Planck Spectroscopy 2026-03/LKIPA Resonance 2026-04/Plots/LKIPA_resonance_PSD-temp={temp_str}mK.png',
         dpi=200,
     )
 
@@ -499,9 +499,8 @@ def get_lkipa_resonance(
 
 ############################ TESTING #############################################
 
-# save_folder='D:/Planck Spectroscopy 2026-03/LKIPA Resonance'
-# myrun       = time.strftime("%Y-%m-%d_%H_%M_%S")                # Save experimental run for each timestamp
-# save_file   = r"{}.hdf5".format(myrun)                          # Save data in hdf5 file for current run
+# save_folder='D:/Planck Spectroscopy 2026-03/LKIPA Resonance 2026-04'
+# save_file   = r"LKIPA-Resonance-10mK-test.hdf5"                        # Save data in hdf5 file for current run
 
 # get_lkipa_resonance(
 #     address=ADDRESS,
