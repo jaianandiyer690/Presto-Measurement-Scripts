@@ -10,8 +10,10 @@ import os
 import h5py
 
 # Network settings for Presto Hardware
-ADDRESS = '130.237.35.90'       # IP Address
-PORT    = 42873                 # TCP Port
+ADDRESS = '192.168.88.53'       # IP Address
+PORT    = None                 # TCP Port
+# ADDRESS = '130.237.35.90'       # IP Address
+# PORT    = 42873                 # TCP Port
 
 # Input (ADC) settings
 INPUT_PORT = 5                  # Correlated vacuum input to presto, output frm JPA
@@ -21,7 +23,7 @@ DF = 10e3                       # MHz
 
 # FLUX PUMP Output (DAC) settings
 FLUX_PORT = 2                   # Pump frequency comb output from presto, input to JPA
-PUMP_AMP = 0.1                  # amplitude of pump signal, 0 for vacuum
+PUMP_AMP = 0.0                  # amplitude of pump signal, 0 for vacuum
 PHASEI = 0.0                    # rad
 PHASEQ = PHASEI - np.pi / 2     # rad
 f0= 4.428e9                     # Resonance Frequency (Hz)  4427780358
@@ -31,7 +33,7 @@ PUMP_FREQ = 2 * f0 - PUMP_NCO   # Hz, 0 to 500 MHz, intermediate frequency
 # DC BIAS settings
 DC_PORT = 2                     # DC Bias for optimal operating point of JPA   
 DAC_CURR = 32_000               # μA, 2250 to 40500   
-DC_BIAS = 1.7                     # Set LKIPA Resonance to 4.428 GHz, taken from latest calibration (2.2 for PUMP OFF, 0.5 for PUMP= 0.25)
+DC_BIAS = 0                     # Set LKIPA Resonance to 4.428 GHz, taken from latest calibration (2.2 for PUMP OFF, 0.5 for PUMP= 0.25)
 
 # Converter configuration for Presto hardware
 CONVERTER_CONFIGURATION = {
@@ -42,7 +44,7 @@ CONVERTER_CONFIGURATION = {
 }     
 
 # Number of pixels to be captured
-N_PIX = 1_000 
+N_PIX = 5_000 
 
 # Define data acquisition function
 # Define data acquisition function
@@ -285,7 +287,7 @@ def lorentz_fit(
         print('FITTING PARAMETERS:')
         print('A_background = ', str(np.round(A_bg, 2)))
         print('B_background = ', str(np.round(B_bg, 2)))
-        print('A_peak = ', str(np.round(A_peak, 2)))
+        print('A_peak = ', str(np.round(A_peak, 4)))
         print('f0 = ', str(np.round(f_0 + 4, 5)), 'GHz')
         print('gamma = ', str(np.round(np.abs(gamma * 1e3), 3)), 'MHz')
 
@@ -295,7 +297,6 @@ def plot_PSD_bw(
         PSD_bandwidth,
         f_arr_bandwidth,
         fit_params,
-        temp,
 ):
     
     # get fitting function
@@ -307,9 +308,6 @@ def plot_PSD_bw(
         f_0=fit_params[3],
         gamma=fit_params[4]
     )
-
-    # temperature string
-    temp_str = str(temp)
     
     # PLOT
     # ====
@@ -326,11 +324,12 @@ def plot_PSD_bw(
         fit_func,
         label='Fit',
         lw=2,
+        ls= '--',
         color='darkorange'
         )
     ax.set_xlabel("Frequency [GHz]")
     ax.set_ylabel("Magnitude [a.u.]")
-    ax.set_title("Power Spectral Density: Temperature = " + temp_str+ 'mK', fontsize=16)
+    ax.set_title("Power Spectral Density", fontsize=16)
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5), fontsize=12)
 
     # Save plot
@@ -339,6 +338,6 @@ def plot_PSD_bw(
     #     dpi=200,
     # )
 
-    plt.close(fig)
+    #plt.close(fig)
 
 
