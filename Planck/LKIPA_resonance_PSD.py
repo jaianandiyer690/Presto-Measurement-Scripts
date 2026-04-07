@@ -399,7 +399,6 @@ def save_data(
         savefile[time_series_str].attrs["Unit"] = "fsu complex"
         savefile[temp_str].attrs["Unit"] = "mK"
 
-
 def get_lkipa_resonance(
     address: str,
     port: int,
