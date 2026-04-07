@@ -17,8 +17,8 @@ from blueftc.BlueforsController import BlueFTController
 import importlib
 
 # # Import scripts for JPA AND LKIPA planck spectroscopy
-# import JPA_planck_spec as jps
-# import LKIPA_planck_spec as lps
+import JPA_planck_spec as jps
+import LKIPA_planck_spec as lps
 import LKIPA_resonance_PSD as psd
 importlib.reload(psd)
 
@@ -193,28 +193,31 @@ def heater_ramp_up(MXC_heater_power_list, N_runs):
         
         # Run JPA Planck
         # =====================
-        # print('Running JPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
-        # # File location for JPA data for current stable temp
-        # save_folder = 0
-        # save_file = f'2026-03-JPA-planck_{current_temp}mk.hdf5'
-        # # run JPA script
-        # #jps.get_jpa_planck(save_folder, save_file, current_temp)
+        print('Running JPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
 
-        # # print data acquisition for JPA complete for current temp
-        # print('JPA Planck data saved for T = ', str(np.round(current_temp, 2)))
+        # File location for JPA data for current stable temp
+        save_folder = 'D:/Planck Spectroscopy 2026-03/JPA'
+        save_file = f'2026-03-JPA-planck_{current_temp}mk.hdf5'
 
-        # # Start LKIPA Planck
-        # # ======================
-        # print('Running LKIPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
+        # run JPA script
+        jps.get_jpa_planck(save_folder, save_file, current_temp)
 
-        # # File location for JPA data for current stable temp
-        # save_folder = 0
-        # save_file = f'2026-03-LKIPA-planck_{current_temp}mk.hdf5'
-        # # run LKIPA script
-        # # lps.get_lkipa_planck(save_folder, save_file, current_temp)
+        # print data acquisition for JPA complete for current temp
+        print('JPA Planck data saved for T = ', str(np.round(current_temp, 2)))
 
-        # # print data acquisition for LKIPA complete for current temp
-        # print('LKIPA Planck data saved for T = ', str(np.round(current_temp, 2)))
+        # Start LKIPA Planck
+        # ======================
+        print('Running LKIPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
+
+        # File location for JPA data for current stable temp
+        save_folder = 'D:/Planck Spectroscopy 2026-03/LKIPA'
+        save_file = f'2026-03-LKIPA-planck_{current_temp}mk.hdf5'
+
+        # run LKIPA script
+        lps.get_lkipa_planck(save_folder, save_file, current_temp)
+
+        # print data acquisition for LKIPA complete for current temp
+        print('LKIPA Planck data saved for T = ', str(np.round(current_temp, 2)))
 
         # Start LKIPA Resonance
         # ======================
@@ -223,7 +226,7 @@ def heater_ramp_up(MXC_heater_power_list, N_runs):
         )
 
         # Set up folder and file for data acquisition
-        save_folder ="D:/Planck Spectroscopy 2026-03/LKIPA Resonance"
+        save_folder ="D:/Planck Spectroscopy 2026-03/LKIPA Resonance 2026-04"
         save_file = f'LKIPA_resonance_PSD_{current_temp}mk.hdf5'
 
         # Run lkipa psd script

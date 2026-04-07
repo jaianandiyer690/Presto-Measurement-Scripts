@@ -91,10 +91,10 @@ input_port = 1
 # MEASUREMENT PARAMETERS
 # NCO frequency
 fNCO = 4.1e9
-# Bandwidth in Hz
-_df = 1e3
+## Bandwidth in Hz
+_df = 1e3 # 1e3 for experiment
 # Number of pixels
-Npix = 2_500_000
+Npix =  2_500_000 # for experiment
 N_chunk = 2500  # number of pixels per chunk
 # Number of pixels we discard
 Nskip = 0
@@ -103,7 +103,7 @@ Navg = 1
 
 # SIGNAL PARAMETERS
 # Number of frequencies of the frequency comb
-nr_sig_freqs = 96
+nr_sig_freqs = 96 # 96 for experiment
 # Frequency span
 fs_span = 200e6
 # Listening comb
@@ -169,13 +169,14 @@ def get_jpa_planck(
     save_data(save_folder, save_file, meas_type, myrun, fs_comb + fNCO, usb_arr, lsb_arr, temp=current_temp)
 
 
+#### TESTING ####
 
-save_folder = '/home/nanophys-meas/Desktop/Jai Master Thesis/Presto-Measurement-Scripts/LKIPA Measurements/I:/LKiPA-Data/2026-03/Planck Tests'
-save_file = '2026-03-JPA-planck_10mk.hdf5'
-current_temp = 10
+# save_folder = 'D:/Planck Spectroscopy 2026-03/JPA'
+# save_file = '2026-03-JPA-planck_10mk.hdf5'
+# current_temp = 10
 
-get_jpa_planck(
-    save_folder,
-    save_file,
-    current_temp
-)
+# get_jpa_planck(
+#     save_folder,
+#     save_file,
+#     current_temp
+# )
