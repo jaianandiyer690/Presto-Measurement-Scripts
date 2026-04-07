@@ -90,7 +90,7 @@ input_port = 5
 
 # MEASUREMENT PARAMETERS
 # NCO frequency
-fNCO = 4.42e9
+fNCO = 4.429e9
 # Bandwidth in Hz
 _df = 1e3 # 1e3 for experiment
 # Number of pixels
@@ -105,7 +105,7 @@ Navg = 1
 # Number of frequencies of the frequency comb
 nr_sig_freqs = 96 # 96 for experiment
 # Frequency span
-fs_span = 200e6
+fs_span = 50e6
 # Listening comb
 _fs_comb = np.linspace(0, fs_span, nr_sig_freqs)
 
