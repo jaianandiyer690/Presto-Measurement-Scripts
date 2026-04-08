@@ -274,7 +274,7 @@ def lorentz_fit(
         lorentzian_fit_func,
         f_arr_bandwidth,
         PSD_bandwidth,
-        p0=[0.5, 0.5, 0.16, 0.428, 0.5e-3]
+        p0=[0.5, 0.5, 0.16e-12, 4.428, 0.5e-3]
     )[0]
 
     if verbose:
