@@ -59,7 +59,7 @@ def get_DR_logs(
 datetime_list, temperature_list = get_DR_logs(
     timestamp_init='2026-04-02 14:00',  # Example start timestamp
     timestamp_final='2026-04-07 03:00',  # Example end timestamp (1 day later)
-    channel_nr=6  # Example channel number
+    channel_nr=1  # Example channel number
 )
 
 # Saving the data to a text file
@@ -70,7 +70,7 @@ df = pd.DataFrame({
     "temperature": temperature_list
 })
 
-df.to_csv("DR_logs_channel_6.csv", index=False)
+df.to_csv("Presto-Measurement-Scripts/Planck/DR_logs_channel_1.csv", index=False)
 
 # Plotting the data
 
