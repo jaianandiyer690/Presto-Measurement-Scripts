@@ -23,7 +23,7 @@ DF = 10e3                       # MHz
 
 # FLUX PUMP Output (DAC) settings
 FLUX_PORT = 2                   # Pump frequency comb output from presto, input to JPA
-PUMP_AMP = 0.14                  # amplitude of pump signal, 0 for vacuum
+PUMP_AMP = 0.0                  # amplitude of pump signal, 0 for vacuum
 PHASEI = 0.0                    # rad
 PHASEQ = PHASEI - np.pi / 2     # rad
 f0= 4.428e9                     # Resonance Frequency (Hz)  4427780358
