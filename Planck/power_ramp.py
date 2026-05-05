@@ -193,25 +193,26 @@ def heater_ramp_up(MXC_heater_power_list, N_runs):
         
         # Run JPA Planck
         # =====================
-        print('Running JPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
+        # print('Running JPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
 
-        # File location for JPA data for current stable temp
-        save_folder = 'D:/Planck Spectroscopy 2026-03/JPA'
-        save_file = f'2026-03-JPA-planck_{current_temp}mk.hdf5'
+        # # File location for JPA data for current stable temp
+        # save_folder = 'D:/Planck Spectroscopy 2026-03/JPA'
+        # save_file = f'2026-03-JPA-planck_{current_temp}mk.hdf5'
 
-        # run JPA script
-        jps.get_jpa_planck(save_folder, save_file, current_temp)
+        # # run JPA script
+        # jps.get_jpa_planck(save_folder, save_file, current_temp)
 
-        # print data acquisition for JPA complete for current temp
-        print('JPA Planck data saved for T = ', str(np.round(current_temp, 2)))
+        # # print data acquisition for JPA complete for current temp
+        # print('JPA Planck data saved for T = ', str(np.round(current_temp, 2)))
 
         # Start LKIPA Planck
         # ======================
+
         print('Running LKIPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
 
         # File location for JPA data for current stable temp
-        save_folder = 'D:/Planck Spectroscopy 2026-03/LKIPA'
-        save_file = f'2026-03-LKIPA-planck_{current_temp}mk.hdf5'
+        save_folder = 'D:\Planck LKIPA Cycle 2026-05'
+        save_file = f'LKIPA-planck-{current_temp}mk.hdf5'
 
         # run LKIPA script
         lps.get_lkipa_planck(save_folder, save_file, current_temp)
@@ -219,42 +220,42 @@ def heater_ramp_up(MXC_heater_power_list, N_runs):
         # print data acquisition for LKIPA complete for current temp
         print('LKIPA Planck data saved for T = ', str(np.round(current_temp, 2)))
 
-        # Start LKIPA Resonance
-        # ======================
-        print('Running LKIPA Resonance PSD Script for T = '
-              , str(np.round(current_temp, 2))
-        )
+        # # Start LKIPA Resonance
+        # # ======================
+        # print('Running LKIPA Resonance PSD Script for T = '
+        #       , str(np.round(current_temp, 2))
+        # )
 
-        # Set up folder and file for data acquisition
-        save_folder ="D:/Planck Spectroscopy 2026-03/LKIPA Resonance 2026-04"
-        save_file = f'LKIPA_resonance_PSD_{current_temp}mk.hdf5'
+        # # Set up folder and file for data acquisition
+        # save_folder ="D:/Planck Spectroscopy 2026-03/LKIPA Resonance 2026-04"
+        # save_file = f'LKIPA_resonance_PSD_{current_temp}mk.hdf5'
 
         # Run lkipa psd script
-        psd.get_lkipa_resonance(
-            address=psd.ADDRESS,
-            port=psd.PORT,
-            converter_configuration=psd.CONVERTER_CONFIGURATION,
-            input_port=psd.INPUT_PORT,
-            adc_att=psd.ADC_ATT,
-            input_nco=psd.INPUT_NCO,
-            output_port=psd.FLUX_PORT,
-            dac_curr=psd.DAC_CURR,
-            amp=psd.PUMP_AMP,
-            freq=psd.PUMP_FREQ,
-            phasei=psd.PHASEI,
-            phaseq=psd.PHASEQ,
-            output_nco=psd.PUMP_NCO,
-            df=psd.DF,
-            dcb_port=psd.DC_PORT,
-            dcb_amp=psd.DC_BIAS,
-            n_pix=psd.N_PIX,
-            save_folder=save_folder,
-            save_file=save_file,
-            temp=current_temp
-        )
+        # psd.get_lkipa_resonance(
+        #     address=psd.ADDRESS,
+        #     port=psd.PORT,
+        #     converter_configuration=psd.CONVERTER_CONFIGURATION,
+        #     input_port=psd.INPUT_PORT,
+        #     adc_att=psd.ADC_ATT,
+        #     input_nco=psd.INPUT_NCO,
+        #     output_port=psd.FLUX_PORT,
+        #     dac_curr=psd.DAC_CURR,
+        #     amp=psd.PUMP_AMP,
+        #     freq=psd.PUMP_FREQ,
+        #     phasei=psd.PHASEI,
+        #     phaseq=psd.PHASEQ,
+        #     output_nco=psd.PUMP_NCO,
+        #     df=psd.DF,
+        #     dcb_port=psd.DC_PORT,
+        #     dcb_amp=psd.DC_BIAS,
+        #     n_pix=psd.N_PIX,
+        #     save_folder=save_folder,
+        #     save_file=save_file,
+        #     temp=current_temp
+        # )
 
-        # Data saved for current temperature
-        print('LKIPA Resonance PSD data saved for T = ', str(np.round(current_temp, 2)))
+        # # Data saved for current temperature
+        # print('LKIPA Resonance PSD data saved for T = ', str(np.round(current_temp, 2)))
 
         clear_output(wait=True)
 

@@ -167,15 +167,3 @@ def get_lkipa_planck(
 
     # Save data
     save_data(save_folder, save_file, meas_type, myrun, fs_comb + fNCO, usb_arr, lsb_arr, temp=current_temp)
-
-
-#### TESTING ####
-# save_folder = 'D:/Planck Spectroscopy 2026-03/LKIPA'
-# save_file = '2026-03-LKIPA-planck_10mk-test.hdf5'
-# current_temp = 10
-
-# get_lkipa_planck(
-#     save_folder,
-#     save_file,
-#     current_temp
-# )
