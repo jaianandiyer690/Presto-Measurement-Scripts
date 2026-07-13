@@ -1,3 +1,5 @@
+from turtle import clear
+
 import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
@@ -8,6 +10,7 @@ from scipy.optimize import curve_fit as cf
 import time
 import os
 import h5py
+from IPython.display import display, clear_output
 
 # Network settings for Presto Hardware
 # ADDRESS = '192.168.88.53'       # IP Address
@@ -23,17 +26,17 @@ DF = 10e3                       # MHz
 
 # FLUX PUMP Output (DAC) settings
 FLUX_PORT = 2                   # Pump frequency comb output from presto, input to JPA
-PUMP_AMP = 1                  # amplitude of pump signal, 0 for vacuum
+PUMP_AMP = 0.0                  # amplitude of pump signal, 0 for vacuum
 PHASEI = 0.0                    # rad
 PHASEQ = PHASEI - np.pi / 2     # rad
-f0= 4.42e9                     # Resonance Frequency (Hz)  4427780358
+f0= 4.428e9                     # Resonance Frequency (Hz)  4427780358
 PUMP_NCO = 8.4e9                # NCO frequency for pump set to 8.4 GHz
 PUMP_FREQ = 2 * f0 - PUMP_NCO   # Hz, 0 to 500 MHz, intermediate frequency
 
 # DC BIAS settings
 DC_PORT = 2                     # DC Bias for optimal operating point of JPA   
 DAC_CURR = 32_000               # μA, 2250 to 40500   
-DC_BIAS = 4                    # Set LKIPA Resonance to 4.428 GHz, taken from latest calibration (2.2 for PUMP OFF, 0.5 for PUMP= 0.25)
+DC_BIAS = 1.7                    # Set LKIPA Resonance to 4.428 GHz, taken from latest calibration (2.2 for PUMP OFF, 0.5 for PUMP= 0.25)
 
 # Converter configuration for Presto hardware
 CONVERTER_CONFIGURATION = {
@@ -57,7 +60,7 @@ def data_acquisition(
     input_nco: float,
     output_port: int,
     dac_curr: int,
-    amp: float,
+    amp_list: list,
     freq: float,
     phasei: float,
     phaseq: float,
@@ -66,6 +69,7 @@ def data_acquisition(
     dcb_port: int,
     dcb_amp: float,
     n_pix: int,
+    myrun: str,
 ):
     with test.Test(address=address, port=port, **converter_configuration) as tst:
         # Get extra samples at the beginning and throw them away
@@ -85,56 +89,73 @@ def data_acquisition(
         tst.hardware.set_dc_bias(port=dcb_port, bias=dcb_amp)
         tst.hardware.sleep(1e-4)
 
-        # Configure output signal for pump tone
-        tst.set_frequency(output_port, freq)
-        tst.set_phase(output_port, phasei, phaseq)
-        tst.set_scale(output_port, scale_i = amp, scale_q = amp)
-        tst.hardware.sleep(1e-4)
 
-        # Print hardware configuration statement
-        print('Hardware configuration successful, initiating data acquisition ...')
 
-        myrun = time.strftime("%Y-%m-%d_%H_%M_%S")  
+        # create folder for current run
+        os.makedirs(f"Time series raw data/{myrun}")
 
-        # Start data acquisition
-        data_all = []
-        with tqdm(total=n_pix, ncols=80) as pbar:
-            for i in range(n_pix):
-                tst.hardware.set_run(False)
-                tst.set_dma_source(input_port)
-                tst.start_dma(extra + nr_samples)
-                tst.hardware.set_run(True)
-                tst.wait_for_dma()
-                tst.stop_dma()
-                data = tst.get_dma_data(extra + nr_samples)
-                tst.hardware.check_adc_intr_status()
-                
-                # Throw away initial `extra` data points, convert to FS
-                if converter_configuration["adc_mode"] == AdcMode.Mixed:
-                    data = data[2*extra:] / 32767
+        for amp in amp_list:
 
-                elif converter_configuration["adc_mode"] == AdcMode.Direct:
-                    data = data[extra:] / 32767
+            # Print processing current pump amplitude statement
+            print(f'Processing pump amplitude: {amp}')
 
-                # Append to data_all list
-                data_all.append(data)
-                
-                # Update progress bar
-                pbar.update(1)
+            # Configure output signal for pump tone
+            tst.set_frequency(output_port, freq)
+            tst.set_phase(output_port, phasei, phaseq)
+            tst.set_scale(output_port, scale_i = amp, scale_q = amp)
+            tst.hardware.sleep(1e-4)
+
+            # Print hardware configuration statement
+            print('Hardware configuration successful, initiating data acquisition ...')             
+
+            # Start data acquisition
+            data_all = []
+            with tqdm(total=n_pix, ncols=80) as pbar:
+                for i in range(n_pix):
+                    tst.hardware.set_run(False)
+                    tst.set_dma_source(input_port)
+                    tst.start_dma(extra + nr_samples)
+                    tst.hardware.set_run(True)
+                    tst.wait_for_dma()
+                    tst.stop_dma()
+                    data = tst.get_dma_data(extra + nr_samples)
+                    tst.hardware.check_adc_intr_status()
+                    
+                    # Throw away initial `extra` data points, convert to FS
+                    if converter_configuration["adc_mode"] == AdcMode.Mixed:
+                        data = data[2*extra:] / 32767
+
+                    elif converter_configuration["adc_mode"] == AdcMode.Direct:
+                        data = data[extra:] / 32767
+
+                    # Append to data_all list
+                    data_all.append(data)
+                    
+                    # Update progress bar
+                    pbar.update(1)
+            
+            # convert data list to np.array
+            data_all = np.array(data_all)
+
+            # save data to .txt file
+            np.savetxt(f"Time series raw data/{myrun}/data_DF={df/1e3:.1f}kHz_amp={amp:.2f}_pixels={n_pix}.txt", data_all)
+
+            # print message for saving data for current pump power
+            print(f"Data for pump amplitude {amp} saved successfully.")
+
+            # clear outputs
+            clear_output(wait=True)
 
         # set all outputs to 0
         tst.hardware.set_dc_bias(port=dcb_port, bias=0.0)
         tst.set_scale(output_port, scale_i = 0, scale_q = 0)
         
-        # convert data list to np.array
-        data_all = np.array(data_all)
-
         # Measurement metadata
         dt = tst.get_dt("adc")*1e9
         fs = tst.get_fs("adc")*1e-9
 
         # Print completion statement
-        print('Data Acquisition Complete.')
+        print('Presto outputs reset to 0, data acquisition complete.')
 
     # Print measurement metadata
     # ==========================
@@ -160,19 +181,10 @@ def data_acquisition(
     # Frequency resolution (kHz)
     print(f"Frequency resolution (DF): {df/1e3:.1f} kHz")
 
-    # Data points captured per pixel
-    N_datastream = np.shape(data_all)[1]
-    print(f"Data points captured per pixel: {N_datastream}")
-
-    # Number of samples per pixel 
-    print(f"Number of samples per pixel: {nr_samples}")
-    
-    return data_all, dt, fs, nr_samples, myrun
-
 def remove_DC(
         data_all,
+        n_pix,
         converter_configuration=CONVERTER_CONFIGURATION,
-        n_pix=N_PIX,
         verbose=False,
 ):
     if converter_configuration["adc_mode"] == AdcMode.Mixed:
@@ -183,9 +195,11 @@ def remove_DC(
         Q_all = data_all[:, 1::2]   # left alone for now !!!
         if verbose: print(f"Shape of I data: {I_all.shape}")
 
-        # Assign data array for raw pixel I data
+        # Assign data array for raw pixel I & Q  data
         for pix in range(n_pix):
             I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
+            Q_all[pix]= Q_all[pix] - np.mean(Q_all[pix])  # remove DC component
+        return I_all, Q_all 
     
     elif converter_configuration["adc_mode"] == AdcMode.Direct:
         if verbose: print("Data format: Direct mode (I only)")
@@ -197,7 +211,7 @@ def remove_DC(
         for pix in range(n_pix):
             I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
 
-    return I_all 
+        return I_all
 
 
 def get_PSD_avg(

@@ -10,6 +10,7 @@ JPA Measurements/time_mode.txt
 LKIPA Measurements/I:
 LKIPA Measurements/Time series data
 LKIPA Measurements/pump_settings_dc04-06_rf015-03.csv
+LKIPA Measurements/Figures
 
 
 Planck/Bluefors_Control_Software_User_Manual.pdf
@@ -29,4 +30,6 @@ Planck/JC Scripts
 **/__pycache__/
 
 Fabio Scripts
-Nils LKIPA Scripts
+Nils LKIPA 
+
+LKIPA Time-Frequency Analysis/Time series raw data
