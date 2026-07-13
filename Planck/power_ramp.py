@@ -211,7 +211,7 @@ def heater_ramp_up(MXC_heater_power_list, N_runs):
         print('Running LKIPA Planck Spectroscopy for T = ', str(np.round(current_temp, 2)))
 
         # File location for JPA data for current stable temp
-        save_folder = 'D:\Planck LKIPA Cycle 2026-05'
+        save_folder = 'D:\Planck 2026-05'
         save_file = f'LKIPA-planck-{current_temp}mk.hdf5'
 
         # run LKIPA script
