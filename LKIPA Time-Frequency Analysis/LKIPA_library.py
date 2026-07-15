@@ -49,8 +49,101 @@ CONVERTER_CONFIGURATION = {
 # Number of pixels to be captured
 N_PIX = 1_000 
 
-# Define data acquisition function
-# Define data acquisition function
+
+def remove_DC(
+        data_all,
+        n_pix,
+        converter_configuration=CONVERTER_CONFIGURATION,
+        verbose=False,
+):
+    if converter_configuration["adc_mode"] == AdcMode.Mixed:
+        if verbose: print("Data format: Mixed mode (I and Q interleaved)")
+
+        # Convert raw ADC data to full-scale (FS) units and separate I and Q components
+        I_all = data_all[:, 0::2]
+        Q_all = data_all[:, 1::2]   
+        if verbose: print(f"Shape of I data: {I_all.shape}")
+
+        # Assign data array for raw pixel I & Q  data
+        for pix in range(n_pix):
+            I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
+            Q_all[pix]= Q_all[pix] - np.mean(Q_all[pix])  # remove DC component
+        return I_all, Q_all 
+    
+    elif converter_configuration["adc_mode"] == AdcMode.Direct:
+        if verbose: print("Data format: Direct mode (I only)")
+
+        # Convert raw ADC data to full-scale (FS) units
+        I_all = data_all
+        if verbose: print(f"Shape of I data: {I_all.shape}")
+
+        for pix in range(n_pix):
+            I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
+
+        return I_all
+    
+
+# Save data to hdf5 file 
+
+def save_data(folder, file, myrun, pump_freq, pump_idx_dict, df, f_NCO, dc_bias, N_pixels, I_arr, Q_arr, t_arr, f_s = 1e9):
+
+    if not os.path.isdir(folder):
+        os.makedirs(folder)
+
+    # Open the save file (.hdf5) in append mode
+    with h5py.File(os.path.join(folder, file), "a") as savefile:
+
+        pump_idx = pump_idx_dict["pump_idx"]
+        pump_amp = pump_idx_dict["pump_amp"]
+
+        # String as handles
+        pump_freq_str = "{}/{}/pump freq".format(myrun, pump_idx)
+        pump_amp_str = "{}/{}/pump amp".format(myrun, pump_idx)
+        df_data_str = "{}/{}/df".format(myrun, pump_idx)
+        f_NCO_str = "{}/{}/f_NCO".format(myrun, pump_idx)
+        dc_bias_str = "{}/{}/dc bias".format(myrun, pump_idx)
+        N_pixels_str = "{}/{}/N pixels".format(myrun, pump_idx)
+        I_arr_str = "{}/{}/I_arr".format(myrun, pump_idx)
+        Q_arr_str = "{}/{}/Q_arr".format(myrun, pump_idx)
+        t_arr_str = "{}/{}/t_arr".format(myrun, pump_idx)
+        fs_str = "{}/{}/fs".format(myrun, pump_idx)
+
+        # Write data to datasets
+        savefile.create_dataset(pump_freq_str, (np.shape(pump_freq)),
+                                dtype=float, data=pump_freq)
+        savefile.create_dataset(pump_amp_str, (np.shape(pump_amp)),
+                                dtype=float, data=pump_amp)
+        savefile.create_dataset(df_data_str, (np.shape(df)),
+                                dtype=float, data=df)
+        savefile.create_dataset(f_NCO_str, (np.shape(f_NCO)),
+                                dtype=float, data=f_NCO)
+        savefile.create_dataset(dc_bias_str, (np.shape(dc_bias)),
+                                dtype=float, data=dc_bias)
+        savefile.create_dataset(N_pixels_str, (np.shape(N_pixels)),
+                                dtype=int, data=N_pixels)
+        savefile.create_dataset(I_arr_str, (np.shape(I_arr)),
+                                dtype=float, data=I_arr)
+        savefile.create_dataset(Q_arr_str, (np.shape(Q_arr)),
+                                dtype=float, data=Q_arr)
+        savefile.create_dataset(t_arr_str, (np.shape(t_arr)),
+                                dtype=float, data=t_arr)
+        savefile.create_dataset(fs_str, (np.shape(f_s)),
+                                dtype=float, data=f_s)
+
+        # Write dataset attributes
+        savefile[pump_freq_str].attrs["Unit"] = "Hz"
+        savefile[pump_amp_str].attrs["Unit"] = "fsu"
+        savefile[f_NCO_str].attrs["Unit"] = "Hz"
+        savefile[dc_bias_str].attrs["Unit"] = "V"
+        savefile[df_data_str].attrs["Unit"] = "Hz"
+        savefile[Q_arr_str].attrs["Unit"] = "fsu"
+        savefile[t_arr_str].attrs["Unit"] = "μs"
+        savefile[fs_str].attrs["Unit"] = "Hz"
+
+##########################################################################
+######### Time Series data acquisition routine for Presto hardware #######
+##########################################################################
+
 def data_acquisition(
     address: str,
     port: int,
@@ -70,12 +163,20 @@ def data_acquisition(
     dcb_amp: float,
     n_pix: int,
     myrun: str,
+    folder: str,
+    file: str
 ):
     with test.Test(address=address, port=port, **converter_configuration) as tst:
         # Get extra samples at the beginning and throw them away
         extra = 1000
         # Calculate number of samples from DF
         nr_samples = int(round(tst.get_fs("adc") / df))
+
+        # Measurement metadata
+        dt = tst.get_dt("adc")*1e9                  # ns
+        fs = tst.get_fs("adc")*1e-9                 # GHz
+        t_arr = dt * np.arange(0, nr_samples, 1)
+    
 
         # Configure mixers for input and output ports
         tst.hardware.configure_mixer(input_nco, in_ports=input_port, sync=False)
@@ -90,19 +191,15 @@ def data_acquisition(
         tst.hardware.sleep(1e-4)
 
 
-
-        # create folder for current run
-        os.makedirs(f"Time series raw data/{myrun}")
-
-        for amp in amp_list:
+        for amp_idx, amp_val in enumerate(amp_list):
 
             # Print processing current pump amplitude statement
-            print(f'Processing pump amplitude: {amp}')
+            print(f'Processing pump amplitude {amp_idx + 1} / {len(amp_list)} : {amp_val}')
 
             # Configure output signal for pump tone
             tst.set_frequency(output_port, freq)
             tst.set_phase(output_port, phasei, phaseq)
-            tst.set_scale(output_port, scale_i = amp, scale_q = amp)
+            tst.set_scale(output_port, scale_i = amp_val, scale_q = amp_val)
             tst.hardware.sleep(1e-4)
 
             # Print hardware configuration statement
@@ -134,14 +231,22 @@ def data_acquisition(
                     # Update progress bar
                     pbar.update(1)
             
-            # convert data list to np.array
+            # Convert data list to np.array
             data_all = np.array(data_all)
 
-            # save data to .txt file
-            np.savetxt(f"Time series raw data/{myrun}/data_DF={df/1e3:.1f}kHz_amp={amp:.2f}_pixels={n_pix}.txt", data_all)
+            # Remove DC component from data
+            I_all, Q_all = remove_DC(data_all, n_pix, converter_configuration)
 
-            # print message for saving data for current pump power
-            print(f"Data for pump amplitude {amp} saved successfully.")
+            # Save data to hdf5 file
+            pump_idx_dict = {
+                "pump_idx": amp_idx,
+                "pump_amp": amp_val
+            }
+
+            save_data(folder, file, myrun, freq, pump_idx_dict, df, input_nco, dcb_amp, n_pix, I_all, Q_all, t_arr)
+
+            # Print message for saving data for current pump power
+            print(f"Data for pump amplitude {amp_idx + 1} / {len(amp_list)} ({amp_val}) saved successfully.")
 
             # clear outputs
             clear_output(wait=True)
@@ -150,12 +255,9 @@ def data_acquisition(
         tst.hardware.set_dc_bias(port=dcb_port, bias=0.0)
         tst.set_scale(output_port, scale_i = 0, scale_q = 0)
         
-        # Measurement metadata
-        dt = tst.get_dt("adc")*1e9
-        fs = tst.get_fs("adc")*1e-9
 
         # Print completion statement
-        print('Presto outputs reset to 0, data acquisition complete.')
+        print('Presto outputs reset to 0, data successfully save to {}.'.format(file))
 
     # Print measurement metadata
     # ==========================
@@ -181,38 +283,103 @@ def data_acquisition(
     # Frequency resolution (kHz)
     print(f"Frequency resolution (DF): {df/1e3:.1f} kHz")
 
-def remove_DC(
-        data_all,
-        n_pix,
-        converter_configuration=CONVERTER_CONFIGURATION,
-        verbose=False,
-):
-    if converter_configuration["adc_mode"] == AdcMode.Mixed:
-        if verbose: print("Data format: Mixed mode (I and Q interleaved)")
 
-        # Convert raw ADC data to full-scale (FS) units and separate I and Q components
-        I_all = data_all[:, 0::2]
-        Q_all = data_all[:, 1::2]   # left alone for now !!!
-        if verbose: print(f"Shape of I data: {I_all.shape}")
+# Data retrieval function from hdf5 file
+def retrieve_data(folder, file, myrun, pump_idx):
+    with h5py.File(os.path.join(folder, file), "r") as savefile:
+        pump_freq_str = "{}/{}/pump freq".format(myrun, pump_idx)
+        pump_amp_str = "{}/{}/pump amp".format(myrun, pump_idx)
+        df_data_str = "{}/{}/df".format(myrun, pump_idx)
+        f_NCO_str = "{}/{}/f_NCO".format(myrun, pump_idx)
+        dc_bias_str = "{}/{}/dc bias".format(myrun, pump_idx)
+        N_pixels_str = "{}/{}/N pixels".format(myrun, pump_idx)
+        I_arr_str = "{}/{}/I_arr".format(myrun, pump_idx)
+        Q_arr_str = "{}/{}/Q_arr".format(myrun, pump_idx)
+        t_arr_str = "{}/{}/t_arr".format(myrun, pump_idx)
+        fs_str = "{}/{}/fs".format(myrun, pump_idx)
 
-        # Assign data array for raw pixel I & Q  data
+        # Retrieve data from datasets
+        pump_freq = savefile[pump_freq_str][()]
+        pump_amp = savefile[pump_amp_str][()]
+        df_data = savefile[df_data_str][()]
+        f_NCO = savefile[f_NCO_str][()]
+        dc_bias = savefile[dc_bias_str][()]
+        N_pixels = savefile[N_pixels_str][()]
+        I_arr = savefile[I_arr_str][()]
+        Q_arr = savefile[Q_arr_str][()]
+        t_arr = savefile[t_arr_str][()]
+        fs_data = savefile[fs_str][()]
+
+    return (pump_freq, pump_amp, df_data, f_NCO, dc_bias, N_pixels,
+            I_arr, Q_arr, t_arr, fs_data)
+
+####################################
+##### Correlation Functions ########
+####################################
+
+
+def get_correlation(I_all_list, Q_all_list):
+
+    n_samples = np.shape(I_all_list)[1]
+    n_pix = np.shape(I_all_list)[0]
+
+    auto_xx_list = np.zeros((n_pix, n_samples))
+    auto_pp_list = np.zeros((n_pix, n_samples))
+    cross_xp_list = np.zeros((n_pix, n_samples))
+
+    with tqdm(total= n_pix, ncols = 80) as pbar:
+
         for pix in range(n_pix):
-            I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
-            Q_all[pix]= Q_all[pix] - np.mean(Q_all[pix])  # remove DC component
-        return I_all, Q_all 
-    
-    elif converter_configuration["adc_mode"] == AdcMode.Direct:
-        if verbose: print("Data format: Direct mode (I only)")
+            
+            auto_xx_list[pix] = np.correlate(
+                a=I_all_list[pix], 
+                v=I_all_list[pix],
+                mode='same'
+            )
 
-        # Convert raw ADC data to full-scale (FS) units
-        I_all = data_all
-        if verbose: print(f"Shape of I data: {I_all.shape}")
+            auto_pp_list[pix] = np.correlate(
+                    a=Q_all_list[pix], 
+                    v=Q_all_list[pix],
+                    mode='same'
+                    )
 
-        for pix in range(n_pix):
-            I_all[pix]= I_all[pix] - np.mean(I_all[pix])  # remove DC component
+            cross_xp_list[pix] = np.correlate(
+                    a=I_all_list[pix],
+                    v=Q_all_list[pix],
+                    mode='same'
+            )
+            pbar.update(1)
 
-        return I_all
+    # Pixel averaged correlation functions
+    auto_xx = np.mean(auto_xx_list, axis=0)
+    auto_pp = np.mean(auto_pp_list, axis=0)
+    cross_xp = np.mean(cross_xp_list, axis=0)
 
+    return auto_xx, auto_pp, cross_xp
+                    
+
+def origin_removed(function):
+
+    n_samples = len(function)
+
+    function_origin_removed = np.concatenate([function[:n_samples//2], function[n_samples//2+1:]])
+
+    return function_origin_removed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### PSD Analysis Functions #####
 
 def get_PSD_avg(
     I_all,
