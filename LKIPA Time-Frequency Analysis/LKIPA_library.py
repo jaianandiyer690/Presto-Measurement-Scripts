@@ -367,17 +367,42 @@ def origin_removed(function):
     return function_origin_removed
 
 
+def get_correlation_interval(t_list, n_interval, n_delay):
+
+    n_samples = len(t_list)
+
+    return t_list[n_samples//2 - n_interval//2 + n_delay: n_samples//2 + n_interval//2 + n_delay]  # Get the correlation interval
+
+def get_correlation_quadratures(I_all_list, Q_all_list, n_interval, n_delay):
+
+    n_samples = np.shape(I_all_list)[1]
+
+    I_corr = I_all_list[:, n_samples//2 - n_interval//2 + n_delay: n_samples//2 + n_interval//2 + n_delay]
+
+    Q_corr = Q_all_list[:, n_samples//2 - n_interval//2 + n_delay: n_samples//2 + n_interval//2 + n_delay]
+
+    return I_corr , Q_corr # Remove DC component from correlation quadratures
 
 
+def covariance_matrix(I_0, Q_0, I_tau, Q_tau, ddof=1):
 
+    # Stack quadratures: [Re0, Im0, Re1, Im1, ...]
+    xp_0 = np.zeros((I_0.shape[0], (I_0.shape[1] * 2)))
+    xp_tau = np.zeros_like(xp_0)
 
+    xp_0[:, 0::2] = I_0
+    xp_0[:, 1::2] = Q_0
 
+    xp_tau[:, 0::2] = I_tau
+    xp_tau[:, 1::2] = Q_tau
 
+    # Cross-covariance between quadratures at T(0) and T(tau), over pixels.
+    # Reduces to the standard same-interval covariance matrix when tau = 0.
+    xp_0_c = xp_0 - xp_0.mean(axis=0, keepdims=True)
+    xp_tau_c = xp_tau - xp_tau.mean(axis=0, keepdims=True)
+    n_pix = xp_0.shape[0]
 
-
-
-
-
+    return xp_0_c.T @ xp_tau_c / (n_pix - ddof)
 
 ###### PSD Analysis Functions #####
 
